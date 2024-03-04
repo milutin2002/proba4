@@ -1,0 +1,7 @@
+git init
+git remote add origin $1
+git branch -M main
+touch poc.txt
+git add .
+git commit -m "Comitovao sam"
+git push -u origin main

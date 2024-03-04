@@ -1,0 +1,8 @@
+if [ -d .git ]; then
+	git add .
+	echo $2
+	git commit -m "$1"
+	git push
+else
+  git rev-parse --git-dir 2> /dev/null;
+fi;
